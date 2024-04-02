@@ -1,0 +1,10 @@
+{
+	"id": "nextcloud-link-fixer",
+	"name": "Nextcloud Link Fixer",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Nextcloud breaks Obsidian links, this fixes them",
+	"author": "KaelLarkin",
+	"authorUrl": "https://kaels-kabbage.com",
+	"isDesktopOnly": false
+}
