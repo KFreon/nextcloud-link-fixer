@@ -38,11 +38,13 @@ export default class NextcloudLinkFixer extends Plugin {
 		await this.saveData(this.settings);
 	}
 
-	async fixObsidianLinksThatNextcloudBreaks(vault: Vault, file: TFile | null, isAutofixing: boolean): Promise<string> {
+	async fixObsidianLinksThatNextcloudBreaks(vault: Vault, file: TFile | null, isFileOpening: boolean): Promise<string> {
 		if (!file) return '';
 
-		// Don't autofix if disabled
-		if (isAutofixing && !this.settings.autofixOnFileOpen) return '';
+		const isFixingAllowed = !isFileOpening || this.settings.autofixOnFileOpen;
+		const isMarkdown = file.extension.toLowerCase() === 'md';
+
+		if (!isFixingAllowed || !isMarkdown) return '';
 
 		// Replace links properly
 		return vault.process(file, (data) => {
