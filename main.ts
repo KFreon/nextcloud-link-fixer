@@ -20,8 +20,8 @@ export default class NextcloudLinkFixer extends Plugin {
 		}))
 
 		this.addCommand({
-			id: 'fix-obsidian-links',
-			name: 'Fix links broken by Nextcloud',
+			id: 'fix-wiki-links',
+			name: 'Fix Wiki-links broken by Nextcloud',
 			editorCallback: (editor: Editor, view: MarkdownView) => {
 				return this.fixObsidianLinksThatNextcloudBreaks(this.app.vault, view.file, false)
 			}
