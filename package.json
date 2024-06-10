@@ -1,7 +1,7 @@
 {
 	"name": "nextcloud-link-fixer",
 	"version": "1.0.0",
-	"description": "Nextcloud escapes Obsidian links (e.g. [[]] becomes \\[\\[\\]\\]). This plugin fixes them automatically (or not)",
+	"description": "Nextcloud escapes Wiki links (e.g. [[]] becomes \\[\\[\\]\\]). This plugin fixes them automatically (or not)",
 	"main": "main.js",
 	"scripts": {
 		"dev": "node esbuild.config.mjs",

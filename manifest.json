@@ -3,7 +3,7 @@
 	"name": "Nextcloud Link Fixer",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Nextcloud breaks Wiki-links (used by Obsidian). This fixes them",
+	"description": "Nextcloud breaks Wiki-links (e.g. [[Some document]]). This fixes them.",
 	"author": "KaelLarkin",
 	"authorUrl": "https://kaels-kabbage.com",
 	"isDesktopOnly": false
